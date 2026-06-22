@@ -1,0 +1,25 @@
+{
+    "name": "@xiaohou2503687-design/bizbot",
+    "version": "0.1.0",
+    "description": "AI customer support chatbot for indie products — embed one script, save 80% support time",
+    "main": "src/index.js",
+    "bin": {
+        "bizbot": "./bin/bizbot.js"
+    },
+    "scripts": {
+        "ingest": "node bin/bizbot.js ingest",
+        "serve": "node bin/bizbot.js serve",
+        "widget": "node bin/bizbot.js widget"
+    },
+    "keywords": ["chatbot", "customer-support", "ai", "rag", "widget", "indie-dev", "cli"],
+    "license": "MIT",
+    "dependencies": {
+        "chalk": "^4.1.2",
+        "commander": "^12.1.0",
+        "express": "^4.21.0",
+        "cors": "^2.8.5"
+    },
+    "engines": {
+        "node": ">=18"
+    }
+}

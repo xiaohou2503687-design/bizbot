@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BizBot - AI Customer Support Chatbot for Indie Products | $19/mo</title>
+<meta name="description" content="One script to embed an AI chatbot on your product. Ingest your docs, save 80% support time. Built for indie hackers.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#0a0a0a;color:#fff;line-height:1.6}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+.hero{text-align:center;padding:80px 20px 50px;background:linear-gradient(135deg,#0a0a0a 0%,#1a2e3a 50%,#0a1a2e 100%)}
+.hero h1{font-size:3.2em;font-weight:800;background:linear-gradient(135deg,#00d4ff,#7b2ff7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:16px}
+.hero .tagline{font-size:1.3em;color:#999;max-width:650px;margin:0 auto 30px}
+.hero .demo-box{background:#111;border:1px solid #333;border-radius:12px;padding:24px;max-width:650px;margin:0 auto 30px;text-align:left;font-family:"Fira Code",monospace;font-size:.9em}
+.hero .demo-box .prompt{color:#00d4ff}
+.hero .demo-box .cmd{color:#7b2ff7}
+.hero .demo-box .output{color:#aaa;margin-top:8px}
+.cta-btn{display:inline-block;background:linear-gradient(135deg,#00d4ff,#7b2ff7);color:#fff;text-decoration:none;padding:16px 48px;border-radius:50px;font-size:1.2em;font-weight:700;cursor:pointer;border:none;transition:transform .2s,box-shadow .2s}
+.cta-btn:hover{transform:scale(1.05);box-shadow:0 0 30px rgba(0,212,255,.4)}
+.guarantee{font-size:.85em;color:#666;margin-top:10px}
+.features{padding:80px 0}
+.features h2{text-align:center;font-size:2em;margin-bottom:50px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:#111;border:1px solid #222;border-radius:12px;padding:28px;transition:border-color .2s}
+.card:hover{border-color:#00d4ff}
+.card .icon{font-size:2em;margin-bottom:12px}
+.card h3{font-size:1.2em;margin-bottom:8px;color:#00d4ff}
+.card p{color:#999;font-size:.95em}
+.pricing{padding:80px 0}
+.pricing h2{text-align:center;font-size:2em;margin-bottom:50px}
+.packs{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.pack{background:#111;border:1px solid #222;border-radius:16px;padding:30px;text-align:center;transition:border-color .2s;position:relative}
+.pack:hover{border-color:#00d4ff}
+.pack.featured{border-color:#00d4ff;box-shadow:0 0 20px rgba(0,212,255,.2)}
+.pack .badge{position:absolute;top:-12px;right:20px;background:#00d4ff;color:#000;padding:4px 12px;border-radius:20px;font-size:.75em;font-weight:700}
+.pack h3{font-size:1.2em;margin-bottom:8px}
+.pack .price{font-size:2.5em;font-weight:800;color:#00d4ff;margin:12px 0}
+.pack .price .unit{font-size:.4em;color:#666}
+.pack .desc{color:#999;font-size:.9em;margin-bottom:16px;min-height:40px}
+.pack ul{list-style:none;text-align:left;margin-bottom:20px}
+.pack ul li{padding:5px 0;color:#aaa;font-size:.9em}
+.pack ul li::before{content:"✓ ";color:#00d4ff}
+.pack .buy-btn{display:block;background:#00d4ff;color:#000;text-decoration:none;padding:12px;border-radius:8px;font-weight:700;cursor:pointer;border:none;width:100%;font-size:1em;transition:background .2s}
+.pack .buy-btn:hover{background:#00a8cc}
+.pack .buy-btn.pro{background:#7b2ff7;color:#fff}
+.pack .buy-btn.pro:hover{background:#6a1fd4}
+.faq{padding:60px 0 80px}
+.faq h2{text-align:center;font-size:2em;margin-bottom:40px}
+.faq-item{background:#111;border:1px solid #222;border-radius:8px;padding:20px;margin-bottom:12px}
+.faq-item h3{color:#00d4ff;margin-bottom:8px;font-size:1.05em}
+.faq-item p{color:#999;font-size:.9em}
+footer{text-align:center;padding:40px 20px;color:#555;font-size:.85em;border-top:1px solid #222}
+footer a{color:#00d4ff;text-decoration:none}
+@media(max-width:768px){.hero h1{font-size:2em}.hero .demo-box{font-size:.75em}}
+</style>
+</head>
+<body>
+<section class="hero"><div class="container">
+<h1>BizBot</h1>
+<p class="tagline">One script to embed an AI chatbot.<br>Ingest your docs · Save 80% support time.</p>
+<div class="demo-box">
+<span class="prompt">$</span> <span class="cmd">npx bizbot ingest ./docs</span>
+<div class="output">📚 12 files · 89 chunks indexed</div>
+<span class="prompt">$</span> <span class="cmd">npx bizbot serve</span>
+<div class="output">🤖 Server running on http://localhost:3456<br>📋 Embed: &lt;script src="...widget.js"&gt;&lt;/script&gt;</div>
+</div>
+<a href="#pricing" class="cta-btn">Get Started - Free</a>
+<p class="guarantee">No credit card · 50 conversations/month free · Works with any site</p>
+</div></section>
+<section class="features"><div class="container">
+<h2>What BizBot Does</h2>
+<div class="grid">
+<div class="card"><div class="icon">📚</div><h3>Doc Ingestion</h3><p>Drop in your docs, FAQ, or API reference. BizBot chunks and indexes everything automatically.</p></div>
+<div class="card"><div class="icon">🔌</div><h3>One-Script Embed</h3><p>Add one script tag to your site. Chat widget appears. No iframes, no platform lock-in.</p></div>
+<div class="card"><div class="icon">🧠</div><h3>RAG-Powered</h3><p>Retrieval-Augmented Generation ensures answers are grounded in your actual docs, not hallucinated.</p></div>
+<div class="card"><div class="icon">🎨</div><h3>Customizable</h3><p>Brand colors, bot name, greeting message. Matches your product's look and feel.</p></div>
+<div class="card"><div class="icon">🤖</div><h3>Optional AI Boost</h3><p>Bring your own OpenAI key for enhanced responses. Works fine without it too.</p></div>
+<div class="card"><div class="icon">📊</div><h3>Analytics Ready</h3><p>Track question frequency, unanswered queries, and user satisfaction over time.</p></div>
+</div></div></section>
+<section class="pricing" id="pricing"><div class="container">
+<h2>Simple Pricing</h2>
+<div class="packs">
+<div class="pack"><h3>Free</h3><div class="price">$0<span class="unit">/mo</span></div><p class="desc">For solo projects</p><ul><li>50 conversations/mo</li><li>1 knowledge base</li><li>Basic widget</li><li>Self-hosted</li></ul><a href="#" class="buy-btn">Install Free</a></div>
+<div class="pack featured"><div class="badge">Popular</div><h3>Pro</h3><div class="price">$19<span class="unit">/mo</span></div><p class="desc">For growing products</p><ul><li>500 conversations/mo</li><li>3 knowledge bases</li><li>AI enhancement</li><li>Custom branding</li><li>Analytics dashboard</li></ul><a href="#" class="buy-btn pro">Subscribe Pro</a></div>
+<div class="pack"><h3>Lifetime</h3><div class="price">$199<span class="unit">once</span></div><p class="desc">Pay once, bot forever</p><ul><li>Unlimited conversations</li><li>All Pro features</li><li>Priority support</li></ul><a href="#" class="buy-btn">Buy Lifetime</a></div>
+</div></div></section>
+<section class="faq"><div class="container">
+<h2>FAQ</h2>
+<div class="faq-item"><h3>How is this different from Intercom/Crisp?</h3><p>Intercom starts at $74/mo. BizBot is self-hosted, open source, and you own your data. One script tag vs. a platform you're locked into.</p></div>
+<div class="faq-item"><h3>Do I need an OpenAI API key?</h3><p>No! BizBot works with a local keyword search engine by default. Add your OpenAI key for enhanced AI responses — your choice.</p></div>
+<div class="faq-item"><h3>Can I host it on my own server?</h3><p>Yes. BizBot is a Node.js server you run anywhere — VPS, Railway, Render. Full control, no vendor lock-in.</p></div>
+</div></section>
+<footer><div class="container"><p>© 2026 BizBot · <a href="https://github.com/xiaohou2503687-design/bizbot">GitHub</a></p></div></footer>
+</body></html>
